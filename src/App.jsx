@@ -4,6 +4,7 @@ import './App.css'
 import { useAuth } from './contexts/AuthContext';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
+import TaskPage from './pages/TaskPage';
 
 function App() {
   const { user } = useAuth();
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={user ? <DashboardPage /> : <Navigate to="/login" />} />
-        {/* <Route path="/task/:id" element={user ? <TaskPage /> : <Navigate to="/login" />} /> */}
+        <Route path="/task/:id" element={user ? <TaskPage /> : <Navigate to="/login" />} />
         <Route path="/" element={<Navigate to={user ? '/dashboard' : '/login'} />} />
       </Routes>
   );
