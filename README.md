@@ -1,12 +1,30 @@
-# React + Vite
+# 🚀 Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A task management dashboard built with **React + Vite**, showcasing clean state management using **Redux Toolkit** and **Context API**.  
+This project is part of an assessment to demonstrate **React skills, state management, and clean architecture**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **React 18** (functional components + hooks)  
+- **Vite** (fast dev server + build)  
+- **Redux Toolkit** (task state, filters, persistence via middleware)  
+- **React Router v6** (routing)  
+- **Context API** (theme + authentication)  
+- **TailwindCSS** 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚡ Features
+- **Task CRUD** → Add, edit, delete tasks (title, description, priority, status).  
+- **Filtering & Sorting** → By status, priority, and creation date.   
+- **Context API** →  
+  - Theme switching (light/dark).  
+  - Fake login/logout with Auth state.  
+- **Redux Toolkit** →  
+  - Task list state + CRUD operations.  
+  - Middleware to persist tasks in `localStorage`.  
+- **Optimistic Updates** → Instant UI updates before persistence.  
+- **Routing** →  
+  - `/login` → Fake login form.  
+  - `/dashboard` → Task dashboard.  
