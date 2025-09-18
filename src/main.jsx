@@ -6,7 +6,7 @@ import { ThemeProvider } from './contexts/ThemeContext.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { store } from './store.js'
+import { store } from './Store.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
